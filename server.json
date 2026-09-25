@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/seo-ai-visibility",
   "title": "Seo Ai Visibility",
   "description": "SEO AI-Visibility MCP — does brand X appear in an LLM's answer (GEO / AI-SEO)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/seo-ai-visibility",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-seo-ai-visibility",
