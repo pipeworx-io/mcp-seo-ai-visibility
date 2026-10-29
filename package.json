@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-seo-ai-visibility",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "SEO AI-Visibility MCP — does brand X appear in an LLM's answer (GEO / AI-SEO) via DataForSEO AI Optimization API (dataforseo.com).",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "seo-ai-visibility",
     "gatewaySlug": "seo-ai-visibility",
-    "sourceHash": "v1-88001bf701a81b222d9dccfffdb0cd9ed917e33721483c839d461c8a0996ca6e",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-1654b3e8338473cb99525133caf521d5f7eb3007e600ad05aca788a7f21343f4",
+    "sourceCommit": "305e2cd138cb71158e9c1e664ea0e6739bd40801"
   }
 }
