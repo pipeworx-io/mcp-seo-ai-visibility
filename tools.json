@@ -1,0 +1,27 @@
+[
+  {
+    "name": "seo_llm_answer",
+    "description": "Does `<brand>` appear in ChatGPT's answer for `<question>` — runs a prompt through an LLM and returns its answer plus any cited sources/links, for AI-visibility (GEO) analysis: see what an LLM says about a brand, topic, or query and which sources it cites. Example: seo_llm_answer({ user_prompt: \"What are the best running shoe brands?\", model_name: \"gpt-4o\", _apiKey: \"your-base64-key\" })",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "user_prompt": {
+          "type": "string",
+          "description": "The prompt/question to ask the LLM, e.g. \"What are the best running shoe brands?\""
+        },
+        "model_name": {
+          "type": "string",
+          "description": "LLM model to query (default \"gpt-4o\")"
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "DataForSEO API key = base64(\"login:password\") from your dataforseo.com account"
+        }
+      },
+      "required": [
+        "user_prompt",
+        "_apiKey"
+      ]
+    }
+  }
+]

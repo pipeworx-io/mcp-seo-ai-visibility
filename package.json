@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-seo-ai-visibility",
-  "version": "0.1.2",
-  "description": "SEO AI-Visibility MCP — does brand X appear in an LLM's answer (GEO / AI-SEO)",
+  "version": "0.2.0",
+  "description": "SEO AI-Visibility MCP — does brand X appear in an LLM's answer (GEO / AI-SEO) via DataForSEO AI Optimization API (dataforseo.com).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-seo-ai-visibility": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "seo-ai-visibility"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-seo-ai-visibility.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/seo-ai-visibility",
   "pipeworx": {
-    "sourceHash": "v1-61ee6dc8da95339dd8e8802539e00568abd4a705ccd4b2976da20f0bb9b7fc90",
-    "sourceCommit": "6fe8fb3e01138dfc4ebe7d5c246503aab9278d06"
+    "mode": "gateway",
+    "slug": "seo-ai-visibility",
+    "gatewaySlug": "seo-ai-visibility",
+    "sourceHash": "v1-88001bf701a81b222d9dccfffdb0cd9ed917e33721483c839d461c8a0996ca6e",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
